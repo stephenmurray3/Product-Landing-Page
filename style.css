@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Rye&display=swap");
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #fff, #eee);
+  font-family: Roboto, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(90deg, #fff, #ddd);
+  height: 85px;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 65vw;
+}
+
+#header-img {
+  max-height: 85px;
+  width: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: Rye, Roboto, sans-serif;
+}
+
+#header ul {
+  display: flex;
+  flex-direction: row;
+  width: 35vw;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 750px) {
+  #header {
+    flex-direction: column;
+    height: 100px;
+  }
+  #logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+  }
+  #header-img {
+    max-height: 50px;
+    width: auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  #header ul {
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 60vw;
+  }
+}
+
+#page {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#form {
+  width: 100%;
+}
+
+#email {
+  max-width: 250px;
+  width: 100%;
+  padding: 5px;
+}
+
+#submit {
+  max-width: 150px;
+  width: 100%;
+  margin: 15px auto;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #ffd500;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #f2ba00;
+}
+
+#features {
+  margin: 50px auto;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+}
+
+i {
+  margin: auto 0;
+  width: 20%;
+  text-align: center;
+  color: darkgreen;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  padding: 20px 10px;
+}
+
+.information h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#how-it-works {
+  display: flex;
+  justify-content: center;
+}
+
+#video {
+  max-width: 750px;
+  width: 100%;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px auto;
+}
+
+.ocarinas {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 30%;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+h3 {
+  background-color: #ccc;
+  margin-top: 0;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.images {
+  height: 100px;
+}
+
+.images img {
+  max-height: 100%;
+  width: auto;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+.cost {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.rupee {
+  height: 25px;
+  width: auto;
+  margin: auto 0;
+}
+
+.number {
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0 2px;
+}
+
+.ocarinas ul {
+  padding: 0;
+  margin-top: 0;
+}
+
+.ocarinas li {
+  padding: 5px;
+}
+
+@media (max-width: 750px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .ocarinas {
+    max-width: 300px;
+    width: 100%;
+    margin: 25px auto;
+  }
+}
+
+footer {
+  background-color: #ddd;
+  padding: 15px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+}
+
+footer li {
+  padding: 0 20px;
+}
+
+footer div {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
